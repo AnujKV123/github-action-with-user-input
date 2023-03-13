@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
-      - run: python programs/fprogram.py 30 50 Anuj
+      - run: python programs/fprogram.py 30 50
 
       - name: success message
         run: echo program executed successfully on ubuntu-latest!!
@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
-      - run: python programs/fprogram.py 10 20 Anuj
+      - run: python programs/fprogram.py 10 20
 
       - name: success message
         run: Write-Output "program executed successfully on windows-latest!!"
