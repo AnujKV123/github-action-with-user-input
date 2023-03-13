@@ -1,0 +1,34 @@
+
+name: MyWorkflow
+
+on:
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+      - run: python programs/fprogram.py
+
+      - name: success message
+        run: echo program executed successfully on ubuntu-latest!!
+  job2:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+      - run: python programs/fprogram.py
+
+      - name: success message
+        run: Write-Output "program executed successfully on windows-latest!!"
