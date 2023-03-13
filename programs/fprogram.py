@@ -1,10 +1,13 @@
-# def add(a, b):
-#     x = a+b
-#     return x
+import sys
 
-# a = int(input("Enter the value of a: "))
-# b = int(input("Enter the value of b: "))
 
-# print(f'sum to {a} and {b} = {add(a, b)}')
+def add(a, b):
+    x = a+b
+    return x
 
-print("Hello World")
+a = int(sys.argv[0])
+b = int(sys.argv[1])
+c = sys.argv[2]
+
+print(f'sum to {a} and {b} = {add(a, b)}')
+print("Hello ", 3)
