@@ -10,4 +10,4 @@ b = int(sys.argv[1])
 c = sys.argv[2]
 
 print(f'sum to {a} and {b} = {add(a, b)}')
-print("Hello ", 3)
+print("Hello ", c)
